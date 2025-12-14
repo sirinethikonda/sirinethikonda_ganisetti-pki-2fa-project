@@ -5,9 +5,8 @@ from cryptography.hazmat.primitives.asymmetric import padding
 from cryptography.hazmat.primitives.asymmetric import utils, rsa
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-KEYS = ROOT / "keys"
-PRIV_PEM = KEYS / "student_private.pem"
-INSTR_PUB_PEM = KEYS / "instructor_public.pem"
+PRIV_PEM = ROOT / "student_private.pem"       # No longer looking in the 'keys' subfolder
+INSTR_PUB_PEM = ROOT / "instructor_public.pem"
 
 def get_latest_commit_hash():
     out = subprocess.check_output(["git", "log", "-1", "--format=%H"], cwd=ROOT)
