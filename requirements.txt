@@ -1,0 +1,17 @@
+# requirements.txt
+
+# For the API server
+fastapi
+uvicorn[standard]
+
+# For cryptographic operations (RSA/OAEP, RSA-PSS)
+cryptography
+
+# For TOTP generation and verification
+pyotp
+
+# For making HTTP requests (used in check_and_post.py, request_seed.py, call_decrypt.py)
+requests
+
+# If you use jq for local testing (optional, but useful)
+# jq
