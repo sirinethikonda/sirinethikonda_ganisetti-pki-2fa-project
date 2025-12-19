@@ -1,3 +1,5 @@
 # .gitattributes
 # Ensure the cron file uses LF (Unix) line endings in the repository
+docker-entrypoint.sh text eol=lf
 app/cron/2fa-cron text eol=lf
+*.sh text eol=lf
