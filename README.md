@@ -18,7 +18,7 @@ The microservice handles sensitive key management, secure data persistence acros
 
 ---
 
-## API Endpoints
+## API Endpoints:-
 
 The service exposes the following endpoints on port **8080**:
 
@@ -38,11 +38,11 @@ The service exposes the following endpoints on port **8080**:
 │   ├── crypto_utils.py       # RSA Key Operations & Decryption/Signing
 │   ├── totp_utils.py         # TOTP Code Generation & Verification
 │   ├── cron/
-│   │   └── 2fa-cron          # CRITICAL: Cron Schedule Config (Must use LF Endings)
+│   │   └── 2fa-cron          # Cron Schedule Config (Must use LF Endings)
 │   └── scripts/
 │       └── log_2fa_cron.py   # Generates and logs 2FA code
 │
-├── .gitattributes            # **CRITICAL:** Forces LF line endings on app/cron/2fa-cron
+├── .gitattributes            #  Forces LF line endings on app/cron/2fa-cron
 ├── docker-compose.yml        
 ├── Dockerfile                
 ├── requirements.txt       
@@ -53,7 +53,7 @@ The service exposes the following endpoints on port **8080**:
 ├── encrypted_seed.txt        
 └── scripts/
     └── sign_and_encrypt_commit.py 
-    
+
 ```
 ## Setup and Deployment
 
